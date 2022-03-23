@@ -13,13 +13,13 @@
             <th>Symbol</th>
             <th>Open Price</th>
             <th>Last Price</th>
-            <th>Price Change Percent</th>
+            <th>% Change</th>
             <th>Volume</th>
             <tr data-th-each="crypto : ${allCrypto}">
                 <td data-th-text="${crypto.getSymbol}"></td>
                 <td data-th-text="${crypto.getOpenPrice}"></td>
                 <td data-th-text="${crypto.getLastPrice}"></td>
-                <td data-th-text="${crypto.getPriceChangePercent}">%</td>
+                <td data-th-text="${crypto.getPriceChangePercent}"></td>
                 <td data-th-text="${crypto.getVolume}"></td>
                
             </tr>

@@ -64,11 +64,11 @@ public class Crypto {
         .filter(v -> v.getString("symbol").contains("USDT"))
         .forEach((JsonObject v) -> {
             Crypto coin = new Crypto();
-            coin.setSymbol(v.getString("symbol").toString());
-            coin.setLastPrice(v.getString("lastPrice").toString());
-            coin.setOpenPrice(v.getString("openPrice").toString());
-            coin.setPriceChangePercent(v.getString("priceChangePercent").toString());
-            coin.setVolume(v.getString("volume").toString());
+            coin.setSymbol(v.getString("symbol"));
+            coin.setLastPrice(v.getString("lastPrice"));
+            coin.setOpenPrice(v.getString("openPrice"));
+            coin.setPriceChangePercent(v.getString("priceChangePercent"));
+            coin.setVolume(v.getString("volume"));
             cryptoList.add(coin);
         });
 
